@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import hoomans from "./assets/Humaaans.png";
+import { Signup } from "./components/Signup";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container mt-3">
+      <div className="row">
+        <div className="col-sm-7">
+          <Signup />
+        </div>
+        <div className="col-sm-5 my-auto ">
+          <img className="img-fluid" src={hoomans} alt="hoomans" />
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
